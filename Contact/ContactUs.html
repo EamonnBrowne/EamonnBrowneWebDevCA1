@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Garden Shop - Contact Us</title>
+  <meta charset="UTF-8">
+  <!--without the viewport meta tag devices like iphones will try scale the page down instead of using the @media queries in the CSS
+  using the viewport meta tag will tell the devices to use the actual width of the device-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Import font for menu bottons from Google fonts-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Galada&display=swap">
+  <!-- custom sytlesheets in the ../styles folder -->
+  <link rel="stylesheet" href="../Styles/styles.css"/>
+  <link rel="stylesheet" href="../Styles/styleContact.css"/> <!-- Used by the form on this pages-->
+
+</head>
+
+<body>
+<!-- Top container with logo and buttons -->
+  <div class="top-container">
+    <!-- Logo div -->
+    <div class="logo-container">
+      <img src="../Images/garden-shop-logo-mini.png" alt="Logo" class="logo">
+    </div>
+    <!-- Buttons divs -->
+    <div class="buttons-container">
+      <button class="button" onclick="window.location.href='../index.html';">Home</button>
+    </div>
+    <div class="buttons-container">
+      <button class="button" onclick="window.location.href='../Shop/shop.html';">Shop</button>
+    </div>
+    <div class="buttons-container">
+        <button class="button">Contact Us</button>
+    </div>
+  </div>
+
+ <!-- use a container to put the body of the weppage-->
+  <div class="content">
+    
+   <h2>Contact us</h2>
+   <p>Contact us about any Gardening related issues you may have.</p>
+    <!-- based on Code taken from W3 schools https://www.w3schools.com/css/css_form.asp -->
+
+    <form id="contactForm" name="ContactForm">
+        <label for="contact">ContactName</label>
+        <input type="text" id="ContactName" name="ContactName" placeholder="Your name.." required>
+        <label for="email">Email</label>
+        <input type="text" id="Email" name="Email" placeholder="Your Email address.." required>
+        <label for="county">County</label>
+        <select id="country" name="country">
+          <option value="Antrim">Antrim</option>
+          <option value="Antrim">Antrim</option>
+          <option value="Carlow">Carlow</option>
+          <option value="australia">Cavan</option>
+          <option value="Clare">Clare</option>
+          <option value="Cork">Cork</option>
+          <option value="Derry">Derry</option>
+          <option value="Down">Down</option>
+          <option value="Dublin">Dublin</option>
+          <option value="Fermanagh">Fermanagh</option>
+          <option value="Galway">Galway</option>
+          <option value="Kerry">Kerry</option>
+          <option value="Kildare">Kildare</option>
+          <option value="Laois">Laois</option>
+          <option value="Leitrim">Leitrim</option>
+          <option value="Limerick">Limerick</option>
+          <option value="Longford">Longford</option>
+          <option value="Louth">Louth</option>
+          <option value="Mayo">Mayo</option>
+          <option value="Meath">Canada</option>
+          <option value="Monaghan">Monaghan</option>
+          <option value="Offaly">Offaly</option>
+          <option value="Roscommon">Roscommon</option>
+          <option value="Sligo">Sligo</option>        
+          <option value="Tipperary">Tipperary</option>
+          <option value="Tyrone">Tyrone</option>
+          <option value="Waterford">Waterford</option>
+          <option value="Westmeath">Westmeath</option>
+          <option value="Wexford">Wexford</option>
+          <option value="Wicklow">Australia</option>
+        </select>
+        <label for="Subject">Subject</label>
+        <select id="Subject" name="Subject">
+            <option value="Garden Plants">Garden Plants</option>
+            <option value="Garden Tools">Garden Tools</option>
+            <option value="Outdoor Living">Outdoor Living</option>
+            <option value="Garden Care">Garden Care</option>
+            <option value="Landscaping">Landscaping</option>
+            <option value="Other">Other</option>
+        </select>
+        <label for="Details">Details</label>
+        <textarea id="Details" name="Details" placeholder="Write something.." style="height:150px" required></textarea>
+        <br>
+        <div class="centerbuttons">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+  </div>
+
+
+
+    <!-- Footer that stays at the bottom -->
+    <div class="footer">
+      <p>Author: Eamonn Browne<br>
+      <a href="x23309709@student.ncirl.ie">x23309709@student.ncirl.ie</a></p>
+      <img src="../Images/nciLogo-50x30.png"  alt="NCI Logo">
+    </div>
+  
+    <script src="../Scripts/Script.js"></script> <!-- Link to the JavaScript file -->
+  
+</body>
+</html>

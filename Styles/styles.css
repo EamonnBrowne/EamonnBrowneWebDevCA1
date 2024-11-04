@@ -1,0 +1,100 @@
+/* Basic styling for the body */
+body {
+	display:flex;
+	margin: 0;
+	font-family: Arial, sans-serif;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: #8bc34a;
+
+}
+
+/* Flex container for the top section */
+.top-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+/* Each div inside the top container should take the same space */
+.top-container > div {
+	flex: 1;
+	display: flex;
+	justify-content: center; /* Center content horizontally */
+	align-items: center; /* Center content vertically */
+}
+
+/* Styling the logo */
+.logo {
+	max-width: 250px; /* Adjust the size of the logo */
+}
+
+/* Button styling */
+.button {
+	padding: 10px 20px;
+	background-color: #8bc34a; /* Green background */
+	color: black;
+	font-family: "Galada", cursive;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+
+
+/* Media query for screens 768px and below (tablets and smaller) */
+@media (max-width: 768px) {
+	.top-container {
+		flex-direction: column; /* Stack the divs vertically */
+		padding: 10px;
+	}
+
+	.top-container > div {
+		margin-bottom: 10px; /* Add space between stacked divs */
+	}
+
+	.logo {
+		max-width: 80px; /* Reduce logo size on smaller screens */
+	}
+
+	.button {
+		padding: 8px 16px; /* Adjust button padding for smaller screens */
+		font-size: 14px;
+	}
+}
+
+/* Media query for screens 480px and below (mobile devices) */
+@media (max-width: 480px) {
+	.button {
+		padding: 6px 12px; /* Further reduce button padding */
+		font-size: 12px;
+	}
+
+	.logo {
+		max-width: 60px; /* Further reduce logo size */
+	}
+}
+
+        /* Flex-grow allows content to take the remaining space, pushing the footer down */
+.content {
+	flex: 1; /* Makes the content area expand to push footer to the bottom */
+	padding: 20px;
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	color: white;
+	font-family: "Inconsolata", sans-serif;
+	font-weight: 900;
+	text-shadow:1px 1px 1px brown;
+	}
+
+/* Footer styling */
+.footer {
+	color: white;
+	text-align: center;
+	padding: 10px 0;
+	}
+		

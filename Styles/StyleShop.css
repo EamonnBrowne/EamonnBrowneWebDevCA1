@@ -1,0 +1,30 @@
+.container{
+    /* sets the backgound of the carousel to match the rest of the page */
+    background-color: #8bc34a;
+    color: white;
+    font-family: "Inconsolata", sans-serif;
+    font-weight: 900;
+    text-shadow:1px 1px 1px brown;
+    
+}
+
+
+/* setting the  max height and width of the carousel  and centering it on the page*/ 
+.carousel .item {
+  height: 500px;
+}
+
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+}
+.center {
+  margin: auto;
+  width: 500px;
+  padding: 10px;
+}
+/* Finished setting the  max height and width of the carousel  and centering it on the page*/ 
+
+/* Setting the colout of the font of the caption if its hard to see */
