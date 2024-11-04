@@ -1,3 +1,10 @@
+/* Eamonn Browne  Student ID 23309709
+     Web Design and Client-Side Scripting
+     Individual CA 
+     Lecturer Lias Murphy
+*/
+
+
 document.getElementById('contactForm').addEventListener('submit', function(event) {
   // Prevent the form from submitting immediately
   event.preventDefault();
